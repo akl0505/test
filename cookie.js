@@ -24,19 +24,19 @@ function getCookie(cname) {
 }
 
 // Hàm để lưu tên người dùng vào cookie
-function saveUsername() {
-    const username = document.getElementById("username").value;
-    if (username != "") {
-        setCookie("username", username, 7); // lưu tên vào cookie trong 7 ngày
-        alert("Đã lưu tên của bạn: " + username);
+function savetest() {
+    const test = document.getElementById("test").value;
+    if (test != "") {
+        setCookie("test", test, 0); // lưu tên vào cookie trong 7 ngày
+        alert("Đã lưu tên của bạn: " + test);
     }
 }
 
 // Hàm để kiểm tra cookie khi trang được tải
 window.onload = function () {
-    const savedUsername = getCookie("username");
-    if (savedUsername != "") {
-        document.getElementById("username").value = savedUsername; // điền giá trị đã lưu vào ô input
-        alert("Xin chào, " + savedUsername + "! Cookie của bạn đã được lưu.");
+    const savedtest = getCookie("test");
+    if (savedtest != "") {
+        document.getElementById("test").value = savedtest; // điền giá trị đã lưu vào ô input
+        alert("Xin chào, " + savedtest + "! Cookie của bạn đã được lưu.");
     }
 };
