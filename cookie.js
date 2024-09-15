@@ -27,7 +27,7 @@ function getCookie(cname) {
 function savetest() {
     const test = document.getElementById("test").value;
     if (test != "") {
-        setCookie("test", test, 0); // lưu tên vào cookie trong 7 ngày
+        setCookie("test", test, 7); // lưu tên vào cookie trong 7 ngày
         alert("Đã lưu tên của bạn: " + test);
     }
 }
